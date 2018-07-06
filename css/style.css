@@ -14,6 +14,7 @@ body {
     color: #000000;
     background: white;
     margin: auto;
+    min-width: 300px;
 }
 
 h1 {
@@ -179,6 +180,10 @@ p {
 .flex-col-4 {
     flex: 4;
 }
+
+.flex-col-5 {
+    flex: 5;
+}
 /* Color */
 
 .text-white {
@@ -213,10 +218,17 @@ p {
     background: transparent;
 }
 
+.bg-transparent:hover {
+    background: #333333;
+}
+
 .bg-red {
     background: #c0392b;
 }
 
+.bg-red:hover {
+    background: #c40000;
+}
 /*Corner Border */
 .rounded-2-2 {
     border-width: 2px;
@@ -246,6 +258,23 @@ p {
     text-align: justify;
     text-align-last: center;
 }
+
+/*Padding and margin*/
+.padding-1 {
+    padding: 1em;
+}
+
+.padding-2 {
+    padding: 2em;
+}
+
+.margin-1 {
+    margin: 1em;
+}
+
+.margin-2 {
+    margin: 2em;
+}
 /*----------------------------------*/
 /* Size dependent class */
 /* Media less than 600px */
@@ -253,41 +282,73 @@ p {
     display: flex;
     flex-direction: column;
 }
+
+.container-sm {
+    padding: 0.5em;
+}
+
+.container-fluid-sm {
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+
+.container-fluid-reserve-sm {
+    padding: 0em 0.5em 0em 0.5em;
+}
+
 .container {
-    padding: 1em;
+    padding: 3em;
 }
 
 .container-fluid {
-    padding: 1em 0em 1em 0em;
+    padding: 3em 0em 3em 0em;
 }
 
+
 .container-fluid-reserve {
-    padding: 0em 1em 0em 1em;
+    padding: 0em 3em 0em 3em;
+}
+
+
+.container-lg {
+    padding: 8em;
+}
+
+.container-fluid-lg {
+    padding: 10em 0em 8em 0em;
+}
+
+.container-fluid-reserve-lg {
+    padding: 0em 8em 0em 8em;
 }
 
 /* Button */
 .btn-sm {
-    padding: 0.75em 1.5em 0.75em 1.5em;
+    padding: 0.75em 0em 0.75em 0em;
 }
 
 .btn{
-    padding: 1em 2em 1em 2em;
+    padding: 1em 0em 1em 0em;
+    margin-bottom: 5px;
+}
+
+.btn-lg {
+    padding: 1.5em 0em 1.5em 0em;
 }
 
 .btn-rounded {
-    border-width: 1px;
+    border-width: 1.25px;
     border-style: solid;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
 .btn-no-border {
     border-width: 0px;
 }
 
-.btn-lg {
-    padding: 1.5em 3em 1.5em 3em;
+.btn:hover {
+    cursor: pointer;
 }
-
 /* Nav bar */
 
 header {
@@ -314,14 +375,35 @@ header {
 }
 
 /* Media larger than 300px */
-@media screen and (min-width : 300px) {
+@media screen and (min-width : 400px) {
     .navbar-ul {
         display: inline-block;
     }
-    
 }
+
+
 /* Media larger than 600px */
 @media screen and (min-width : 600px) {
+
+    h1 {
+        font-family: "Avenir Next", sans-serif;
+        font-size: 2.5em;
+        font-weight: 200;
+    }
+    
+    h2 {
+        font-family: "Avenir Next", sans-serif;
+        font-size: 2em;
+        font-weight: 200;
+    
+    }
+    
+    h3 {
+        font-family: "Avenir Next", sans-serif;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+
     .flex-direction-auto {
         flex-direction: row;
     }
@@ -330,6 +412,57 @@ header {
         margin-left: 5%;
     }
 
+    .container-sm {
+        padding: 1em;
+    }
+    
+    .container-fluid-sm {
+        padding: 1em 0em 1em 0em;
+    }
+    
+    
+    .container-fluid-reserve {
+        padding: 0em 1em 0em 1em;
+    }
+    
+    .container {
+        padding: 5em;
+    }
+    
+    .container-fluid {
+        padding: 5em 0em 5em 0em;
+    }
+    
+    
+    .container-fluid-reserve {
+        padding: 0em 5em 0em 5em;
+    }
+    
+    
+    .container-lg {
+        padding: 10em;
+    }
+    
+    .container-fluid-lg {
+        padding: 10em 0em 10em 0em;
+    }
+    
+    .container-fluid-reserve-lg {
+        padding: 0em 10em 0em 10em;
+    }
+
+    .btn-sm {
+        padding: 0.75em 1.5em 0.75em 1.5em;
+    }
+    
+    .btn{
+        padding: 1em 2em 1em 2em;
+        margin-bottom: 0px;
+    }
+
+    .btn-lg {
+        padding: 1.5em 3em 1.5em 3em;
+    }
 }
 
 

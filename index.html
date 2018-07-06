@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
     <body>
-        <header class="container-fluid flex-direction-auto">
+        <header class="container-fluid-sm flex-direction-auto">
             <div class="header-logo">
                 <a href="index.html" title="Home page"><img src="images/flex.png" height="36"></a>
             </div>
@@ -21,28 +21,47 @@
         </header>
         <!-- Main content -->
         <main>
-            <div class="flex-row bg-bright-black ">
+            <div class="container-fluid-lg flex-row bg-bright-black" id="page">
                 <div class="flex-col-1"> </div>
-                <div class="container flex-col-3 text-white" id="page">
-                    <div class="container-fluid text-center">
+                <div class="container-fluid flex-col-3 text-white" >
+                    <div class="container-fluid-sm text-center">
                         <h1> THIS IS THE HEADER OF THIS PAGE </h1>
                     </div>
-                    <div class="container-fluid text-justify-center">
+                    <div class="text-justify-center">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
                             Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
                             Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                            Donec egestas enim a libero interdum ultricies. Pellentesque rhoncus egestas posuere. Donec congue et est vel elementum. Vivamus vehicula auctor mi at commodo. 
-                            Cras tempor ornare sem, sit amet pharetra diam vestibulum ut. Suspendisse gravida nibh in justo tempus consectetur. Vestibulum at porta dui. Cras ac pharetra sapien, eu efficitur lacus.
                         </p>
                     </div>
-                        <div class="container-fluid flex-direction-auto">
-                            <button class="btn-rounded btn-lg bg-transparent text-white">HELLO</button>
-                            <button class="btn-rounded btn-lg bg-red text-white border-red">KITTY</button>
+                    <div class="flex-row">
+                        <div class="flex-col-1"></div>
+                        <div class="flex-col-5 container-fluid-sm flex-direction-auto flex-main-evenly ">
+                            <button class="btn btn-rounded btn-lg bg-transparent text-white">HELLO</button>
+                            <button class="btn btn-rounded btn-lg bg-red text-white border-red">KITTY</button>
                         </div>
+                        <div class="flex-col-1"></div>
+                    </div>
                 </div>
                 <div class="flex-col-1"></div>
             </div>
+
+            <div class="container-fluid flex-row bg-white" id="porfolio">
+                    <div class="flex-col-1"> </div>
+                    <div class="flex-col-3 text-black" >
+                        <div class="container-fluid-sm text-center">
+                            <h1> THIS IS THE HEADER OF THIS PAGE </h1>
+                        </div>
+                        <div class="container-fluid-sm text-justify-center">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                                Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
+                                Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-col-1"></div>
+                </div>
         </main>
 
         <footer>
