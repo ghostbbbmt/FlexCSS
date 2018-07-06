@@ -374,10 +374,27 @@ header {
     color: #B6B6B6;
 }
 
+.navbar-link {
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    color: #c0392b;
+    border-bottom: 2px solid #c0392b;
+    padding: 0.2em;
+    margin-bottom: 0.2em;
+}
 /* Media larger than 300px */
 @media screen and (min-width : 400px) {
     .navbar-ul {
         display: inline-block;
+    }
+
+    .active {
+        border: 1px solid #c0392b;
+        border-radius: 0.2em;
+        padding: 0.4em;
     }
 }
 
