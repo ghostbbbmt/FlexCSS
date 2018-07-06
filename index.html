@@ -5,38 +5,44 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width">
     <body>
-        <header class="container-fluid">
+        <header class="container-fluid flex-direction-auto">
             <div class="header-logo">
                 <a href="index.html" title="Home page"><img src="images/flex.png" height="36"></a>
             </div>
             <nav class="flex-self-center">
                 <ul>
-                    <li class="navbar-ul"><a class="navbar-item" class="active" title="Home">Home</a></li>
-                    <li class="navbar-ul"><a class="navbar-item" title="Page">Page</a></li>
-                    <li class="navbar-ul"><a class="navbar-item" title="Portfolio">Portfolio</a></li>
-                    <li class="navbar-ul"><a class="navbar-item" title="Contact">Contact</a></li>
-                    <li class="navbar-ul"><a class="navbar-item" title="About">About</a></li>
+                    <li class="navbar-ul"><a title="Home">Home</a></li>
+                    <li class="navbar-ul"><a title="Page">Page</a></li>
+                    <li class="navbar-ul"><a title="Portfolio">Portfolio</a></li>
+                    <li class="navbar-ul"><a title="Contact">Contact</a></li>
+                    <li class="navbar-ul"><a title="About">About</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Main content -->
         <main>
-            <div class="section section-page" id="page">
-                    <h1>
-                        THIS IS THE HEADER OF THIS PAGE
-                    </h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                        Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
-                        Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                        Donec egestas enim a libero interdum ultricies. Pellentesque rhoncus egestas posuere. Donec congue et est vel elementum. Vivamus vehicula auctor mi at commodo. 
-                        Cras tempor ornare sem, sit amet pharetra diam vestibulum ut. Suspendisse gravida nibh in justo tempus consectetur. Vestibulum at porta dui. Cras ac pharetra sapien, eu efficitur lacus.
-                    </p>
-                    <div class="section-page-button">
-                        <button id="hello-button">HELLO</button>
-                        <button id="kitty-button">KITTY</button>
+            <div class="flex-row bg-bright-black ">
+                <div class="flex-col-1"> </div>
+                <div class="container flex-col-3 text-white" id="page">
+                    <div class="container-fluid text-center">
+                        <h1> THIS IS THE HEADER OF THIS PAGE </h1>
                     </div>
+                    <div class="container-fluid text-justify-center">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                            Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
+                            Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
+                            Donec egestas enim a libero interdum ultricies. Pellentesque rhoncus egestas posuere. Donec congue et est vel elementum. Vivamus vehicula auctor mi at commodo. 
+                            Cras tempor ornare sem, sit amet pharetra diam vestibulum ut. Suspendisse gravida nibh in justo tempus consectetur. Vestibulum at porta dui. Cras ac pharetra sapien, eu efficitur lacus.
+                        </p>
+                    </div>
+                        <div class="container-fluid flex-direction-auto">
+                            <button class="btn-rounded btn-lg bg-transparent text-white">HELLO</button>
+                            <button class="btn-rounded btn-lg bg-red text-white border-red">KITTY</button>
+                        </div>
                 </div>
+                <div class="flex-col-1"></div>
+            </div>
         </main>
 
         <footer>

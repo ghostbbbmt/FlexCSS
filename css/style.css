@@ -8,12 +8,6 @@ html {
     background: white;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    background:#ececec;
-}
-
 body {
     font-family: Saira, sans-serif;
     font-size: 1em;
@@ -24,7 +18,7 @@ body {
 
 h1 {
     font-family: "Avenir Next", sans-serif;
-    font-size: 1.8em;
+    font-size: 2.0em;
     font-weight: 200;
 }
 
@@ -169,11 +163,96 @@ p {
 .flex-self-none {
     flex: none;
 }
+/* Column */
+.flex-col-1 {
+    flex: 1;
+}
+
+.flex-col-2 {
+    flex: 2;
+}
+
+.flex-col-3 {
+    flex: 3;
+}
+
+.flex-col-4 {
+    flex: 4;
+}
 /* Color */
 
-/* Size dependent class */
+.text-white {
+    color: white;
+}
 
+.text-black {
+    color: black;
+}
+
+.text-bright-black {
+    color: #575757;
+}
+
+.text-red {
+    color: #c0392b;
+}
+
+.bg-bright-black {
+    background: #575757;
+}
+
+.bg-white {
+    background: white;
+}
+
+.bg-black {
+    background: black;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-red {
+    background: #c0392b;
+}
+
+/*Corner Border */
+.rounded-2-2 {
+    border-width: 2px;
+    border-radius: 2px;
+}
+
+.rounded-1-4 {
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+
+.border-red {
+    border-color: #c0392b;
+}
+
+.border-white {
+    border-color: white;
+}
+
+/*Text*/
+.text-center {
+    text-align: center;
+}
+
+.text-justify-center {
+    text-align: justify;
+    text-align-last: center;
+}
+/*----------------------------------*/
+/* Size dependent class */
 /* Media less than 600px */
+.flex-direction-auto {
+    display: flex;
+    flex-direction: column;
+}
 .container {
     padding: 1em;
 }
@@ -182,23 +261,50 @@ p {
     padding: 1em 0em 1em 0em;
 }
 
+.container-fluid-reserve {
+    padding: 0em 1em 0em 1em;
+}
+
+/* Button */
+.btn-sm {
+    padding: 0.75em 1.5em 0.75em 1.5em;
+}
+
+.btn{
+    padding: 1em 2em 1em 2em;
+}
+
+.btn-rounded {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+.btn-no-border {
+    border-width: 0px;
+}
+
+.btn-lg {
+    padding: 1.5em 3em 1.5em 3em;
+}
+
 /* Nav bar */
+
+header {
+    background:#f7f7f7;
+}
+
 .header-logo {
     margin-right: auto;
     margin-left: auto;
-}
+} 
 
 .navbar-ul {
     display: flex;
     flex-direction: column;
     padding: 0 1.4em 0 0;
     font-size: 1.0em;
-}
-
-
-.navbar-item {
     margin: auto;
-    padding: 0.5em;
     text-decoration: none;
     cursor: pointer;
 }
@@ -216,9 +322,10 @@ p {
 }
 /* Media larger than 600px */
 @media screen and (min-width : 600px) {
-    header {
+    .flex-direction-auto {
         flex-direction: row;
     }
+    
     .header-logo {
         margin-left: 5%;
     }
