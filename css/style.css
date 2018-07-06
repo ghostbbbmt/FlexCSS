@@ -8,6 +8,12 @@ html {
     background: white;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    background:#ececec;
+}
+
 body {
     font-family: Saira, sans-serif;
     font-size: 1em;
@@ -41,14 +47,183 @@ p {
 }
 /* Size independent class */
 
-/* Size dependent class */
-/* Media less than 600px */
+/* Flex */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-main-start {
+    justify-content: start;
+}
+
+.flex-main-end {
+    justify-content: end;
+}
+
+.flex-main-center {
+    justify-content: center;
+}
+
+.flex-main-between {
+    justify-content: space-between;
+}
+
+.flex-main-around {
+    justify-content: space-around;
+}
+
+.flex-main-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-cross-start {
+    align-content: flex-start;
+}
+
+.flex-cross-end {
+    align-content: flex-end;
+}
+
+.flex-main-center {
+    align-content: center;
+}
+
+.flex-main-baseline {
+    align-content: baseline;
+}
+
+.flex-cross-stretch {
+    align-content: stretch;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-reserve {
+    flex-wrap: wrap-reverse;
+}
+
+.flex-content-stretch {
+    align-content: stretch;
+}
+
+.flex-content-start {
+    align-content: flex-start;
+}
+
+.flex-content-end {
+    align-content: flex-end;
+}
+
+.flex-content-center {
+    align-content: center;
+}
+
+.flex-content-between {
+    align-content: space-between;
+}
+
+.flex-content-around {
+    align-content: space-around;
+}
+
+.flex-self-stretch {
+    align-self: stretch;
+}
+
+.flex-self-start {
+    align-self: flex-start;
+}
+
+.flex-self-end {
+    align-self: flex-end;
+}
+
+.flex-self-center {
+    align-self: center;
+}
+
+.flex-self-baseline {
+    align-self: baseline;
+}
+
+.flex-self-auto {
+    flex: auto;
+}
+
+.flex-self-initial {
+    flex: initial;
+}
+
+.flex-self-none {
+    flex: none;
+}
+/* Color */
+
+/* Size dependent class */
+
+/* Media less than 600px */
 .container {
     padding: 1em;
 }
 
-/* Media larger than 800px */
+.container-fluid {
+    padding: 1em 0em 1em 0em;
+}
+
+/* Nav bar */
+.header-logo {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.4em 0 0;
+    font-size: 1.0em;
+}
+
+
+.navbar-item {
+    margin: auto;
+    padding: 0.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-ul :hover {
+    color: #B6B6B6;
+}
+
+/* Media larger than 300px */
+@media screen and (min-width : 300px) {
+    .navbar-ul {
+        display: inline-block;
+    }
+    
+}
+/* Media larger than 600px */
+@media screen and (min-width : 600px) {
+    header {
+        flex-direction: row;
+    }
+    .header-logo {
+        margin-left: 5%;
+    }
+
+}
 
 
 /* Media larger than 1200px */
