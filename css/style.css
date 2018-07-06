@@ -1,0 +1,54 @@
+/* HTML DOM style*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: white;
+}
+
+body {
+    font-family: Saira, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background: white;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 1.8em;
+    font-weight: 200;
+}
+
+h2 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+
+}
+
+h3 {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Avenir Next", sans-serif;
+    font-size: 0.85em;
+}
+/* Size independent class */
+
+/* Size dependent class */
+/* Media less than 600px */
+
+.container {
+    padding: 1em;
+}
+
+/* Media larger than 800px */
+
+
+/* Media larger than 1200px */
