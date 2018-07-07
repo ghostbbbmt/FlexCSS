@@ -65,9 +65,21 @@
 }
 
 .bg-red:hover {
-    background: #c40000;
+    background: #e92525;
 }
 
 .bg-blue:hover {
     background: #096f9e;
+}
+
+.shadow-hover:hover {
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.active {
+    color: #f1c40f;
+    border-bottom: 1.2px solid #f1c40f;
+    margin-bottom: 0.2em;
+    font-weight: bold;
 }

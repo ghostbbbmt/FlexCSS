@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width">
     <body>
         <!-- Navigation -->
-        <header class="container-fluid-sm flex-direction-auto text-white bg-flat-black">
+        <header class="container-fluid-sm flex-direction-auto text-white bg-flat-black" id="navigationBar">
             <div class="header-logo">
                 <a href="index.html" title="Home page"><img src="images/logo-web.png" height="48"></a>
             </div>
@@ -27,7 +28,7 @@
         <!-- Main content -->
         <main>
             <!-- Header -->
-            <div class="container-fluid text-center text-white img-header" id="header">
+            <div class="container-fluid-lg text-center text-white img-header">
                 <h1 class="margin-bottom padding-top"> MONITER YOUR MINER <br> EVERYTIME, EVERYWHERE </h1>
                 <p class="width-half align-center-row text-justify-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
@@ -105,7 +106,7 @@
                 </div>
                 <div class="container-fluid-sm flex-main-around flex-direction-auto-medium">
                     <div class="flex-direction-auto">
-                            <div class="container-sm flex-col bg-white flex-1 text-center margin-2">
+                            <div class="container-sm flex-col bg-white flex-1 text-center margin-2 shadow-hover border border-light-gray">
                                 <div class="container-fluid-reserve-sm">
                                     <h1>$69</h1>
                                 </div>
@@ -175,6 +176,23 @@
                 <img src="images/flex.png" width="256">
                 <p>Copyright 2017 Henne Watches Ltd. - All Rights Reserved</p>
                 <p>Legal Disclaimer and Terms & Conditions</p>
-            </footer>
+        </footer>
+
+        <script>
+            //On windows scroll event
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("navigationBar");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                header.classList.add("navbar-sticky");
+                } else {
+                header.classList.remove("navbar-sticky");
+                }
+            }
+        </script>
+                
     </body>
 </html>

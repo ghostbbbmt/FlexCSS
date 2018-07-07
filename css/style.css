@@ -250,6 +250,11 @@ header {
     border-color: #f39c12;
 }
 
+.navbar-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .active {
     color: #f1c40f;
@@ -257,6 +262,8 @@ header {
     margin-bottom: 0.2em;
     font-weight: bold;
 }
+
+
 /* Media larger than 300px */
 @media screen and (min-width : 400px) {
     .navbar-ul {
@@ -365,10 +372,11 @@ header {
     }
 }
 
-/* Media larger than 1280px */
+/* Media larger than 1280px */ /*
 @media screen and (min-width : 1280px) {
     body {
         margin: auto;
         max-width: 1280px;
     }
 }
+/*
