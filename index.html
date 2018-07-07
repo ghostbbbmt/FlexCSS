@@ -3,74 +3,58 @@
     <title>Flex Demo</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <meta name="viewport" content="width=device-width">
     <body>
         <!-- Navigation -->
-        <header class="container-fluid-sm flex-direction-auto">
+        <header class="container-fluid-sm flex-direction-auto text-white bg-flat-black">
             <div class="header-logo">
-                <a href="index.html" title="Home page"><img src="images/flex.png" height="36"></a>
+                <a href="index.html" title="Home page"><img src="images/logo-web.png" height="48"></a>
             </div>
-            <nav class="flex-self-center padding-right-1">
+            <nav class="flex-self-center padding-right text-center">
                 <ul>
-                    <li class="navbar-ul"><a class="navbar-link active text-center" href="index.html" title="Home">Home</a></li>
-                    <li class="navbar-ul"><a class="navbar-link text-center" href="#mission" title="Mission">Mission</a></li>
-                    <li class="navbar-ul"><a class="navbar-link text-center" href="#feature" title="Feature">Feature</a></li>
-                    <li class="navbar-ul"><a class="navbar-link text-center" href="#price" title="Price">Price</a></li>
-                    <li class="navbar-ul"><a class="navbar-link text-center" href="#about" title="About">About</a></li>
+                    <li class="navbar-ul"><a class="text-simple active" href="index.html" title="Home">HOME</a></li>
+                    <li class="navbar-ul"><a class="text-simple text-white" href="#news" title="News">NEWS</a></li>
+                    <li class="navbar-ul"><a class="text-simple text-white" href="#feature" title="Feature">FEATURE</a></li>
+                    <li class="navbar-ul"><a class="text-simple text-white" href="#price" title="Price">PRICE</a></li>
+                    <li class="navbar-ul"><a class="text-simple text-white" href="#about" title="About">ABOUT</a></li>
                 </ul>
             </nav>
         </header>
         <!-- Main content -->
         <main>
             <!-- Header -->
-            <div class="container-fluid-lg flex-row bg-bright-black" id="header">
-                <div class="flex-col-1"> </div>
-                <div class="container-fluid flex-col-3 text-white" >
-                    <div class="container-fluid-sm text-center">
-                        <h1> THIS IS THE HEADER OF THIS PAGE </h1>
-                    </div>
-                    <div class="text-justify-center">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                            Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
-                            Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                        </p>
-                    </div>
-                    <div class="flex-row">
-                        <div class="flex-col-1"></div>
-                        <div class="flex-col-5 container-fluid-sm flex-direction-auto flex-main-evenly ">
-                            <button class="btn btn-rounded btn-lg bg-transparent text-white">HELLO</button>
-                            <button class="btn btn-rounded btn-lg bg-red text-white border-red">KITTY</button>
-                        </div>
-                        <div class="flex-col-1"></div>
-                    </div>
+            <div class="container-fluid text-center text-white img-header" id="header">
+                <h1 class="margin-bottom padding-top"> MONITER YOUR MINER <br> EVERYTIME, EVERYWHERE </h1>
+                <p class="width-half align-center-row text-justify-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                    Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
+                    Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
+                </p>
+                <div class="width-half align-center-all flex-direction-auto flex-main-evenly padding-2 ">
+                    <a href="#feature" class="btn btn-rounded btn-lg bg-transparent text-white text-simple text-bold">SEE MORE</a>
+                    <a href="#about" class="btn btn-rounded btn-lg bg-red text-white border-red text-simple text-bold">TRY NOW!</a>
                 </div>
-                <div class="flex-col-1"></div>
             </div>
 
-            <!-- Mission -->
-            <div class="container-fluid flex-row bg-white" id="mission">
-                <div class="flex-col-1"> </div>
-                <div class="flex-col-3 text-black" >
-                    <div class="container-fluid-sm text-center">
-                        <h1> THIS IS THE HEADER OF THIS SECTION </h1>
-                    </div>
-                    <div class="container-fluid-sm text-justify-center">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                            Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
-                            Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                        </p>
-                    </div>
-                    <div class="line line-md line-blue align-center"></div>
-                </div>
-                <div class="flex-col-1"></div>
+            <!-- News -->
+            <div class="container-fluid bg-white text-center text-black" id="news">
+                <h1> NEW VERSION ARRIVED! </h1>
+                <p class="width-half align-center-row text-justify-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                    Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
+                    Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
+                </p>
+                <div class="line line-md line-blue align-center-horizontal"></div>
             </div>
 
             <!--Feature-->
             <div class="container-fluid-lg flex-row flex-direction-auto bg-light-gray" id="feature">
                 <div class="container-fluid-reserve-sm flex-col-2 align-center">
-                    <img class="img-auto width-full" src="images/bigdata.png">
+                    <img class="img-crop width-full height-full img-half" src="images/bigdata.png">
                 </div>
                 <div class="container-fluid-reserve flex-col-1">
                     <div class="container-fluid-sm">
@@ -153,7 +137,7 @@
                     </div>
                     
                     <div class="flex-direction-auto">
-                        <div class="container-sm flex-col bg-white flex-1 text-center margin-2">
+                        <div class="container-sm flex-col bg-white flex-1 text-center margin-2 border border-light-gray">
                             <div class="container-fluid-reserve-sm">
                                 <h1>$69</h1>
                             </div>

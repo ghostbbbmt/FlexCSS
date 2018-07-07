@@ -1,0 +1,95 @@
+/*Alignment*/
+
+.align-center {
+    display: block;
+    position: relative;
+}
+
+.align-center-all {
+    margin: auto;
+}
+
+.align-center-col {
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.align-center-row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-left {
+    margin-right: auto;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.align-end {
+    margin-top: auto;
+}
+
+/*Length*/
+.width-full {
+    max-width: 100%;
+}
+
+.width-half {
+    max-width: 50%;
+}
+
+.height-full {
+    max-height: 100%;
+}
+
+.height-half {
+    max-height: 50%;
+}
+
+/*Padding and margin*/
+.padding-1 {
+    padding: 1em;
+}
+
+.padding-2 {
+    padding: 2em;
+}
+
+.padding-row-2 {
+    padding: 2em 0;
+}
+
+.padding-col-2 {
+    padding: 0 2em;
+}
+
+.padding-left {
+    padding-left: 1em;
+}
+
+.padding-right {
+    padding-right: 1em;
+}
+
+.padding-top {
+    padding-top: 1em;
+}
+
+
+.margin-1 {
+    margin: 1em;
+}
+
+.margin-2 {
+    margin: 2em;
+}
+
+.margin-bottom {
+    margin: 0 0 1em 0;
+}
+
+.margin-none {
+    margin:0 ;
+}
