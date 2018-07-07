@@ -25,14 +25,14 @@ h1 {
 
 h2 {
     font-family: "Avenir Next", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 200;
 
 }
 
 h3 {
     font-family: "Avenir Next", sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
 }
 
@@ -214,6 +214,23 @@ p {
     background: black;
 }
 
+.bg-blue {
+    background: #0ba1e7;
+}
+
+.bg-light-black {
+    background: #818181;
+}
+
+.bg-light-blue {
+    background: #f1faff;
+}
+
+.bg-light-gray {
+    background: #dfdfdf;
+}
+
+
 .bg-transparent {
     background: transparent;
 }
@@ -229,6 +246,10 @@ p {
 .bg-red:hover {
     background: #c40000;
 }
+
+.bg-blue:hover {
+    background: #096f9e;
+}
 /*Corner Border */
 .rounded-2-2 {
     border-width: 2px;
@@ -238,6 +259,10 @@ p {
 .rounded-1-4 {
     border-width: 1px;
     border-radius: 4px;
+}
+
+.border-blue {
+    border-color: #0ba1e7;
 }
 
 
@@ -259,9 +284,21 @@ p {
     text-align-last: center;
 }
 
+.text-bold {
+    font-weight: bold;
+}
+
 /*Padding and margin*/
 .padding-1 {
     padding: 1em;
+}
+
+.padding-left-1 {
+    padding-left: 1em;
+}
+
+.padding-right-1 {
+    padding-right: 1em;
 }
 
 .padding-2 {
@@ -275,6 +312,66 @@ p {
 .margin-2 {
     margin: 2em;
 }
+
+/*Image*/
+.img-auto {
+    width: auto;
+    height: auto;
+}
+
+/*Length*/
+.width-full {
+    max-width: 100%;
+}
+
+.width-half {
+    max-width: 50%;
+}
+
+/*Line*/
+.line-blue {
+    border-bottom-color:#0ba1e7;
+}
+
+.line {
+    display: inline-block;
+    border-bottom-style: solid;
+    margin: 0 0.5em;
+}
+
+.line-start {
+    margin-left: 0;
+}
+
+.line-sm {
+    width: 2em;
+    border-bottom-width: 10px;
+}
+
+.line-md {
+    width: 6em;
+    border-bottom-width: 15px;
+}
+
+/*Alignment*/
+
+.align-center {
+    display: block;
+    position: relative;
+    margin:auto;
+}
+
+.align-left {
+    margin-right: auto;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+.align-end {
+    margin-top: auto;
+}
 /*----------------------------------*/
 /* Size dependent class */
 /* Media less than 600px */
@@ -283,17 +380,22 @@ p {
     flex-direction: column;
 }
 
+.flex-direction-auto-medium {
+    display: flex;
+    flex-direction: column;
+}
+
 .container-sm {
-    padding: 0.5em;
+    padding: 1.5em;
 }
 
 .container-fluid-sm {
-    padding: 0.5em 0em 0.5em 0em;
+    padding: 1.5em 0;
 }
 
 
 .container-fluid-reserve-sm {
-    padding: 0em 0.5em 0em 0.5em;
+    padding: 0em 1.5em;
 }
 
 .container {
@@ -301,25 +403,25 @@ p {
 }
 
 .container-fluid {
-    padding: 3em 0em 3em 0em;
+    padding: 3em 0em;
 }
 
 
 .container-fluid-reserve {
-    padding: 0em 3em 0em 3em;
+    padding: 0em 3em;
 }
 
 
 .container-lg {
-    padding: 8em;
+    padding: 6em;
 }
 
 .container-fluid-lg {
-    padding: 10em 0em 8em 0em;
+    padding: 6em 0em 6em 0em;
 }
 
 .container-fluid-reserve-lg {
-    padding: 0em 8em 0em 8em;
+    padding: 0em 6em 0em 6em;
 }
 
 /* Button */
@@ -349,6 +451,7 @@ p {
 .btn:hover {
     cursor: pointer;
 }
+
 /* Nav bar */
 
 header {
@@ -363,7 +466,7 @@ header {
 .navbar-ul {
     display: flex;
     flex-direction: column;
-    padding: 0 1.4em 0 0;
+    padding: 0 0 1em 0;
     font-size: 1.0em;
     margin: auto;
     text-decoration: none;
@@ -372,6 +475,7 @@ header {
 
 .navbar-ul :hover {
     color: #B6B6B6;
+    border-color: #B6B6B6;
 }
 
 .navbar-link {
@@ -382,17 +486,18 @@ header {
 .active {
     color: #c0392b;
     border-bottom: 2px solid #c0392b;
-    padding: 0.2em;
     margin-bottom: 0.2em;
+    font-weight: bold;
 }
 /* Media larger than 300px */
 @media screen and (min-width : 400px) {
     .navbar-ul {
+        padding: 0 1em 0.5em 0;
         display: inline-block;
     }
 
     .active {
-        border: 1px solid #c0392b;
+        border: 2px solid #c0392b;
         border-radius: 0.2em;
         padding: 0.4em;
     }
@@ -404,20 +509,20 @@ header {
 
     h1 {
         font-family: "Avenir Next", sans-serif;
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: 200;
     }
     
     h2 {
         font-family: "Avenir Next", sans-serif;
-        font-size: 2em;
+        font-size: 1.3em;
         font-weight: 200;
     
     }
     
     h3 {
         font-family: "Avenir Next", sans-serif;
-        font-size: 1.5em;
+        font-size: 1.1em;
         font-weight: 500;
     }
 
@@ -427,6 +532,10 @@ header {
     
     .header-logo {
         margin-left: 5%;
+    }
+
+    .navbar-ul {
+        padding: 0 1.5em 0 0;
     }
 
     .container-sm {
@@ -483,4 +592,9 @@ header {
 }
 
 
-/* Media larger than 1200px */
+/* Media larger than 800px */
+@media screen and (min-width : 800px) {
+    .flex-direction-auto-medium {
+        flex-direction: row;
+    }
+}
