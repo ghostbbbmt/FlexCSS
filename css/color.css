@@ -16,6 +16,14 @@
     color: #c0392b;
 }
 
+.text-green {
+    color: #16a085;
+}
+
+.text-blue {
+    color: #0ba1e7;
+}
+
 .bg-bright-black {
     background: #575757;
 }
@@ -77,9 +85,3 @@
     box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
-.active {
-    color: #f1c40f;
-    border-bottom: 1.2px solid #f1c40f;
-    margin-bottom: 0.2em;
-    font-weight: bold;
-}

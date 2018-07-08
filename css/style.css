@@ -16,7 +16,7 @@ body {
     min-width: 300px;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Raleway", sans-serif;
     margin: 1em 0;
 }
@@ -113,9 +113,10 @@ img {
     overflow: hidden;
 }
 
-.img-header {
-    background-image: url('../images/bg.jpg'); 
+.img-cover {
     background-size: cover;
+    min-height: 300px;
+    position: relative;
 }
 /*Line*/
 .line-blue {
@@ -151,7 +152,17 @@ img {
     flex-direction: column;
 }
 
+.flex-direction-reserve-auto {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex-direction-auto-medium {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-direction-reserve-auto-medium {
     display: flex;
     flex-direction: column;
 }
@@ -223,6 +234,18 @@ img {
     cursor: pointer;
 }
 
+
+/* button app store */
+.btn-app-store{
+    display: inline-block;
+    width: 13em;
+    opacity: 0.7;
+}
+
+.btn-app-store:hover {
+    opacity: 1;
+}
+
 /* Nav bar */
 
 header {
@@ -254,6 +277,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .active {
@@ -264,7 +288,7 @@ header {
 }
 
 
-/* Media larger than 300px */
+/* Media larger than 400px */
 @media screen and (min-width : 400px) {
     .navbar-ul {
         padding: 0 1em 0.5em 0;
@@ -276,6 +300,9 @@ header {
         border-radius: 0.2em;
         padding: 0.4em;
     }
+
+
+
 }
 
 
@@ -301,14 +328,18 @@ header {
     .flex-direction-auto {
         flex-direction: row;
     }
-    
+
+    .flex-direction-reserve-auto-medium {
+        flex-direction: row;
+    }
+
     .header-logo {
         margin-left: 5%;
         padding: 0;
     }
 
     .navbar-ul {
-        padding: 0 1.2em 0 0;
+        padding: 0 0.6em;
     }
 
     .container-sm {
@@ -369,6 +400,10 @@ header {
 @media screen and (min-width : 800px) {
     .flex-direction-auto-medium {
         flex-direction: row;
+    }
+
+    .flex-direction-reserve-auto-medium {
+        flex-direction: column;
     }
 }
 
