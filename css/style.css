@@ -43,6 +43,7 @@ p {
 
 img {
     vertical-align: middle;
+    object-fit: contain;
 }
 /* Size independent class */
 

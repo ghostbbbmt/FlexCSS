@@ -33,27 +33,27 @@
 
 /*Length*/
 .width-full {
-    max-width: 100%;
+    width: 100%;
 }
 
 .width-half {
-    max-width: 50%;
+    width: 50%;
 }
 
 .height-full {
-    max-height: 100%;
+    height: 100%;
 }
 
 .height-half {
-    max-height: 50%;
+    height: 50%;
 }
 
 /*Padding and margin*/
-.padding-1 {
+.padding-sm {
     padding: 1em;
 }
 
-.padding-2 {
+.padding-md {
     padding: 2em;
 }
 
@@ -63,17 +63,17 @@
     padding-right: 1em;
 }
 
-.padding-row-2 {
+.padding-row-md {
     padding-left: 2em;
     padding-right: 2em;
 }
 
-.padding-row-3 {
+.padding-row-lg {
     padding-left: 3em;
     padding-right: 3em;
 }
 
-.padding-col-2 {
+.padding-col-md {
     padding: 0 2em;
 }
 
@@ -87,7 +87,7 @@
     padding-left: 1em;
 }
 
-.padding-left-2 {
+.padding-left-md {
     padding-left: 1em;
 }
 
@@ -100,11 +100,11 @@
 }
 
 
-.margin-1 {
+.margin-sm {
     margin: 1em;
 }
 
-.margin-2 {
+.margin-md {
     margin: 2em;
 }
 
