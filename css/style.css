@@ -48,9 +48,26 @@ img {
 
 
 /*Corner Border */
+.border, .border-row, .border-col, .border-bottom, .border-top {
+    border-style: solid;
+    border-color: black;
+}
 
 .border {
-    border: 1px solid black;
+    border-width: 1px;
+}
+
+.border-row {
+    border-width: 1px 0 1px 0;
+
+}
+
+.border-col {
+    border-width: 0 1px 0 1px;
+}
+
+.border-bottom {
+    border-width: 0px 0px 1px 0px;
 }
 
 .border-red {
@@ -73,6 +90,18 @@ img {
     border-color: #0ba1e7;
 }
 
+.border-yellow {
+    border-color: #f39c12;
+}
+
+.border-red {
+    border-color: #c0392b;
+}
+
+.border-flat-black {
+    border-color: #252525;
+}
+
 .rounded-2-2 {
     border-width: 2px;
     border-radius: 2px;
@@ -92,9 +121,18 @@ img {
     text-align: center;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .text-justify-center {
     text-align: justify;
     text-align-last: center;
+}
+
+.text-justify-left {
+    text-align: justify;
+    text-align-last: left;
 }
 
 .text-bold {
@@ -109,6 +147,10 @@ img {
     height: auto;
 }
 
+.img-rounded {
+    border-radius: 50%;
+}
+
 .img-crop {
     overflow: hidden;
 }
@@ -116,6 +158,11 @@ img {
 .img-cover {
     background-size: cover;
     min-height: 300px;
+    position: relative;
+}
+
+.img-block {
+    background-size: auto;
     position: relative;
 }
 /*Line*/
@@ -133,9 +180,14 @@ img {
     margin-left: 0;
 }
 
-.line-sm {
-    width: 2em;
+.line-bullet {
+    width: 1em;
     border-bottom-width: 10px;
+}
+
+.line-sm {
+    width: 1.5em;
+    border-bottom-width: 5px;
 }
 
 .line-md {
@@ -143,6 +195,21 @@ img {
     border-bottom-width: 15px;
 }
 
+.line-smd {
+    width: 3em;
+    border-bottom-width: 8px;
+}
+
+/*Input*/
+.input {
+    padding: 15px 10px;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.input-half {
+    width: 50%;
+}
 
 /*----------------------------------*/
 /* Size dependent class */
@@ -207,13 +274,13 @@ img {
 }
 
 /* Button */
-.btn-sm {
-    padding: 0.75em 0em 0.75em 0em;
-}
-
 .btn{
     padding: 1em 0em 1em 0em;
     margin-bottom: 5px;
+}
+
+.btn-sm {
+    padding: 0.25em 1em 0.25em 1em;
 }
 
 .btn-lg {
@@ -232,6 +299,33 @@ img {
 
 .btn:hover {
     cursor: pointer;
+}
+
+/*Scroll*/
+
+.btn-scroll {
+    display: none;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+    right:10px;	
+    transition: 0.5s;
+}
+
+.text-scroll {
+    position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2b3;
+	padding:10px 20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+}
+
+.text-scroll:hover {
+    background:#6b6b6bb3;
 }
 
 
@@ -381,15 +475,15 @@ header {
         padding: 0em 10em 0em 10em;
     }
 
-    .btn-sm {
-        padding: 0.75em 1.5em 0.75em 1.5em;
-    }
-    
     .btn{
         padding: 1em 2em 1em 2em;
         margin-bottom: 0px;
     }
 
+    .btn-sm {
+        padding: 0em 2em 0em 2em;
+    }
+    
     .btn-md {
         padding: 1em 3em 1em 3em;
     }

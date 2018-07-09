@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <title>Flex Demo</title>
+    <title>Miner Tracker Project</title>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/fav.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flex.css">
     <link rel="stylesheet" href="css/color.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width">
     <body>
         <!-- Navigation -->
@@ -28,28 +30,29 @@
         <!-- Main content -->
         <main>
             <!-- Header -->
-            <div class="container-fluid-lg text-center text-white img-cover" style="background-image:url(images/bg.jpg)">
+            <div class="container-fluid-lg text-center text-white img-cover" style="background-image:url(images/bg.jpg)" id="header">
                 <h1 class="margin-bottom"> MONITER YOUR MINER <br> EVERYTIME, EVERYWHERE </h1>
-                <p class="width-half align-center-row text-justify-center">
+                <h3 class="width-half align-center-row text-justify-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
                     Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
                     Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                </p>
+                </h3>
                 <div class="width-half align-center-all flex-direction-auto flex-main-evenly padding-2 ">
-                    <a href="#feature" class="btn btn-rounded btn-lg bg-transparent text-white text-simple text-bold">SEE MORE</a>
-                    <a href="#about" class="btn btn-rounded btn-lg bg-red text-white border-red text-simple text-bold">TRY NOW!</a>
+                    <a href="#feature" class="btn btn-rounded btn-lg bg-transparent bg-transparent-hover  text-white text-simple text-bold">SEE MORE</a>
+                    <a href="#about" class="btn btn-rounded btn-lg bg-red hover-light text-white border-red text-simple text-bold">TRY NOW!</a>
                 </div>
             </div>
 
             <!-- News -->
             <div class="container-fluid bg-white text-center text-black" id="news">
                 <h1> <i class="fa fa-download text-green"></i> NEW VERSION ARRIVED! </h1>
-                <p class="width-half align-center-row text-justify-center">
+                <h3 class="width-half align-center-row text-justify-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
                     Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
                     Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                </p>
+                </h3>
                 <div class="line line-md line-blue align-center-horizontal"></div>
+
                 <div class="width-half align-center-all flex-direction-auto flex-main-center padding-2 ">
                     <a href="#"><img class="btn-app-store" src="images/google-play-badge.png"></a>
                     <a href="#"><img class="btn-app-store" src="images/App_Store.png"></a>
@@ -57,13 +60,21 @@
             </div>
 
             <!--Feature-->
-            <div class="container-fluid padding-row-3 bg-light-gray" id="feature">
+            <div class="container-fluid padding-row-3 bg-flat-black text-center text-white" id="feature">
                 <h1 class="text-center"> <i class="fa fa-heart text-red"></i> WHY CHOOSE MINER TRACKER? </h1>
-                <div class="flex-direction-auto-medium flex-main-between">
-                    <div class="container-fluid-reserve-sm margin-row flex-col-2 align-center img-cover" style="background-image:url(images/bg.jpg)"></div>
+                <h3 class="width-half align-center-row text-justify-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                    Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
+                </h3>
+                <div class="line line-md line-blue align-center-horizontal"></div>
+
+                <div class="flex-direction-auto-medium flex-main-between container-fluid-sm text-left">
+                    <div class="container-fluid-reserve-sm margin-row flex-col-2 align-center img-block">
+                        <img class="width-full" src="images/mockup.png">
+                    </div> 
                     <div class="flex-direction-reserve-auto-medium flex-col-1">
                         <div class="container-sm">
-                            <h3 class="text-bold"><div class="line line-sm line-blue line-start"></div> <i class="fa fa-line-chart"></i> MONITOR 24/7</h3>
+                            <h3 class="text-bold"><div class="line line-bullet line-blue line-start"></div> <i class="fa fa-line-chart"></i> MONITOR 24/7</h3>
                             <div class="margin-bottom text-justify">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
@@ -71,118 +82,251 @@
                             </div>
                         </div>
                         <div class="container-sm">
-                                <h3 class="text-bold"><div class="line line-sm line-blue line-start"></div>This is the header of paragraph</h3>
-                                <div class="container-fluid-sm text-justify">
+                                <h3 class="text-bold"><div class="line line-bullet line-blue line-start"></div>  <i class="fa fa-thermometer"></i> ALL INFO IS COLLECTED</h3>
+                                <div class="margin-bottom text-justify">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
                                     </p>
                             </div>
                         </div>
                         <div class="container-sm">
-                                <h3 class="text-bold"><div class="line line-sm line-blue line-start"></div>This is the header of paragraph</h3>
-                                <div class="container-fluid-sm text-justify">
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                                        </p>
-                                </div>
+                            <h3 class="text-bold"><div class="line line-bullet line-blue line-start"></div>  <i class="fa fa-cloud"></i> POWERED BY CLOUD</h3>
+                            <div class="margin-bottom text-justify">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                                    </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Price -->
-            <div class="container-fluid flex-col bg-light-blue" id="price">
-                <div class="flex-row">
-                    <div class="flex-col-1"> </div>
-                    <div class="flex-col-3 text-black" >
-                        <div class="container-fluid-sm text-center">
-                            <h1> THIS IS THE HEADER OF THIS SECTION </h1>
-                        </div>
-                        <div class="container-fluid-sm text-justify-center">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                                Quisque at ligula quis lacus congue ultricies non sit amet nisl. Ut vitae nibh augue. Phasellus sagittis risus posuere, vestibulum nisi eget, commodo ante. 
-                                Nulla tempor, magna at pretium efficitur, tortor arcu lobortis tellus, vitae feugiat dolor quam nec odio. Praesent scelerisque ornare eros, interdum mollis dui fermentum eget. 
-                            </p>
-                        </div>
-                        <div class="line line-md line-blue align-center"></div>
-                    </div>
-                    <div class="flex-col-1"></div>
-                </div>
+            <div class="container-fluid text-center" id="price">
+                <h1> <i class="fa fa-usd text-yellow "></i> PRICING </h1>
+                <h2 class="width-half align-center-row text-justify-center">
+                    Choose a pricing plan that fits your needs.
+                </h2>
+                <div class="line line-md line-blue align-center-horizontal"></div>
                 <div class="container-fluid-sm flex-main-around flex-direction-auto-medium">
-                    <div class="flex-direction-auto">
-                            <div class="container-sm flex-col bg-white flex-1 text-center margin-2 shadow-hover border border-light-gray">
-                                <div class="container-fluid-reserve-sm">
-                                    <h1>$69</h1>
+                    <div class="flex-direction-auto flex-col-1">
+                            <!-- First card -->
+                            <div class="flex-col bg-white flex-col-1 text-center margin-1 shadow-hover border border-light-gray">
+                                <div class="text-white bg-flat-black border-bottom border-light-gray">
+                                    <h1>FREE</h1>
                                 </div>
-                                <div class="container-sm">
-                                    <h2>THIS IS THE HEADER OF AN ITEM</h2>
+                                <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">1</span> PCs </h3>
                                 </div>
-                                <p class="container-sm text-justify-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                                </p>
+                                <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">1</span> Account </h3>
+                                </div>
+                                <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">Basic</span> Information </h3>
+                                </div>
+                                <div class="border-bottom border-light-gray">
+                                        <h3> <span class="text-bold">Working hours</span> Support </h3>
+                                </div>
+                                <div class="container-fluid-sm border-bottom border-light-gray">
+                                    <h1>$ 0</span></h1>
+                                    <p>per month</p>
+                                </div>  
                                 <div class="container-sm">
-                                    <button class="btn btn-rounded btn bg-blue text-white border-blue"><h2 class="text-bold">CLICK HERE</h2></button>
+                                    <button class="btn btn-sm btn-rounded bg-flat-black text-white border-flat-black hover-light">
+                                        <h3 class="text-bold"><i class="fa fa-check"></i> Sign Up </h3>
+                                    </button>
                                 </div>
                             </div>
-        
-                            <div class="container-sm flex-col bg-white flex-1 text-center margin-2">
-                                <div class="container-fluid-reserve-sm">
-                                    <h1>$69</h1>
-                                </div>
-                                <div class="container-sm">
-                                    <h2>THIS IS THE HEADER OF AN ITEM</h2>
-                                </div>
-                                <p class="container-sm text-justify-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                                </p>
-                                <div class="container-sm">
-                                        <button class="btn btn-rounded btn bg-blue text-white border-blue"><h2 class="text-bold">CLICK HERE</h2></button>
-                                </div>
+
+                          <!-- Second card -->
+                          <div class="flex-col bg-white flex-col-1 text-center margin-1 shadow-hover border border-light-gray">
+                            <div class="text-white bg-blue border-bottom border-light-gray">
+                                <h1>BASIC</h1>
                             </div>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">10</span> PCs </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">1</span> Account </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">Basic</span> Information </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">Working hours</span> Support </h3>
+                            </div>
+                            <div class="container-fluid-sm border-bottom border-light-gray">
+                                <h1>$ 10</span></h1>
+                                <p>per month</p>
+                            </div>  
+                            <div class="container-sm">
+                                <button class="btn btn-sm btn-rounded bg-blue text-white border-blue hover-light">
+                                    <h3 class="text-bold"><i class="fa fa-check"></i> Sign Up </h3>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="flex-direction-auto">
-                        <div class="container-sm flex-col bg-white flex-1 text-center margin-2 border border-light-gray">
-                            <div class="container-fluid-reserve-sm">
-                                <h1>$69</h1>
+                    <div class="flex-direction-auto flex-col-1">
+                        <!-- Third card -->
+                        <div class="flex-col bg-white flex-col-1 text-center margin-none shadow-hover border border-light-gray">
+                            <div class="text-white bg-red border-bottom border-light-gray">
+                                <h1>PRO</h1>
                             </div>
-                            <div class="container-sm">
-                                <h2>THIS IS THE HEADER OF AN ITEM</h2>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">25</span> PCs </h3>
                             </div>
-                            <p class="container-sm text-justify-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                            </p>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">5</span> Accounts </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">Detail</span> Information </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">24/7</span> Support </h3>
+                            </div>
+                            <div class="container-fluid-sm border-bottom border-light-gray">
+                                <h1>$ 25</span></h1>
+                                <p>per month</p>
+                            </div>  
                             <div class="container-sm">
-                                <button class="btn btn-rounded btn bg-red text-white border-red"><h2 class="text-bold">CLICK HERE</h2></button>
+                                <button class="btn btn-sm btn-rounded bg-red text-white border-red hover-light">
+                                    <h3 class="text-bold"><i class="fa fa-check"></i> Sign Up </h3>
+                                </button>
                             </div>
                         </div>
 
-                        <div class="container-sm flex-col bg-white flex-1 text-center margin-2">
-                            <div class="container-fluid-reserve-sm">
-                                <h1>$69</h1>
+                        <!--Fourth card -->
+                        <div class="flex-col bg-white flex-col-1 text-center margin-1 shadow-hover border border-light-gray">
+                            <div class="text-white bg-yellow border-bottom border-light-gray">
+                                <h1>PREMIUM</h1>
                             </div>
-                            <div class="container-sm">
-                                <h2>THIS IS THE HEADER OF AN ITEM</h2>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">100</span> PCs </h3>
                             </div>
-                            <p class="container-sm text-justify-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
-                            </p>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">10</span> Accounts </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                <h3> <span class="text-bold">Detail</span> Information </h3>
+                            </div>
+                            <div class="border-bottom border-light-gray">
+                                    <h3> <span class="text-bold">24/7</span> Support </h3>
+                            </div>
+                            <div class="container-fluid-sm border-bottom border-light-gray">
+                                <h1>$ 75</span></h1>
+                                <p>per month</p>
+                            </div>  
                             <div class="container-sm">
-                                    <button class="btn btn-rounded btn bg-blue text-white border-blue"><h2 class="text-bold">CLICK HERE</h2></button>
+                                <button class="btn btn-sm btn-rounded bg-yellow text-white border-yellow hover-light">
+                                    <h3 class="text-bold"><i class="fa fa-check"></i> Sign Up </h3>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- About -->
+            <div class="container-fluid bg-white text-center text-black bg-light-gray" id="about">
+                <h1> <i class="fa fa-users text-pink"></i> MEET OUR TEAM </h1>
+                <h3 class="width-half align-center-row text-justify-center">
+                    We are ArounDev Team
+                </h3>
+                <div class="line line-md line-blue align-center-horizontal"></div>
+                <div class="container-fluid-sm flex-main-around flex-direction-auto-medium">
+                    <div class="flex-direction-auto flex-col-1">
+                        <!-- First card -->
+                        <div class="flex-col flex-col-1 text-center margin-1">
+                            <img class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar.png">
+                            <h3 class="text-bold">Thanh Hoang Le Hai</h3>
+                            <h3 class="margin-none">Windows Developer</span></h3>
+                            <p class="margin-none">.NET (WPF, Windows Service)</span></p>
+                        </div>
+
+                        <!-- Second card -->
+                        <div class="flex-col flex-col-1 text-center margin-1">
+                            <img class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar.png">
+                            <h3 class="text-bold">Kha Tran Dinh Nguyen</h3>
+                            <h3 class="margin-none">Mobile Developer</span></h3>
+                            <p class="margin-none">React Native</span></p>
+                        </div>
+                    </div>
+                
+                    <div class="flex-direction-auto flex-col-1">
+                        <!-- Third card -->
+                        <div class="flex-col flex-col-1 text-center margin-1">
+                            <img class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar.png">
+                            <h3 class="text-bold">Nghia Nguyen Huu</h3>
+                            <h3 class="margin-none">Backend Developer</span></h3>
+                            <p class="margin-none">Node.js Cloud Database</span></p>
+                        </div>
+
+                    <!--Fourth card -->
+                        <div class="flex-col flex-col-1 text-center margin-1">
+                            <img class="container-fluid-sm width-half align-center-row img-rounded" src="images/img_avatar2.png">
+                            <h3 class="text-bold">Trang Nguyen Thi Thu</h3>
+                            <h3 class="margin-none">Bussiness Analyst </span></h3>
+                            <p class="margin-none">Project Supervisor</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </main>
         <!-- Footer -->
-        <footer>
-                <img src="images/flex.png" width="256">
-                <p>Copyright 2017 Henne Watches Ltd. - All Rights Reserved</p>
-                <p>Legal Disclaimer and Terms & Conditions</p>
-        </footer>
+        <footer class="container-fluid-sm bg-flat-black text-white">
+            <div class="container-fluid-reserve flex-direction-auto-medium">
+                <!-- About us -->
+                <div class="flex-col-1 margin-2">
+                    <div class="container-fluid-sm">
+                        <h2 class="margin-none">About Miner Tracker</h2>
+                        <div class="line line-smd line-blue margin-none"></div>
+                        <p class="text-justify-left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu blandit ligula, ac tempor erat. Aliquam turpis enim, blandit ut posuere sit amet, commodo vel lectus. 
+                        </p>
+                    </div>
 
+                    <div class="container-fluid-sm">
+                        <h2 class="margin-none">Legacy</h2>
+                        <div class="line line-smd line-blue margin-none text-left"></div>
+                        <a class="text-white" href="#" title="Legal Notice"><p>Legal Notice</p></a>
+                        <a class="text-white" href="#" title="Terms & Conditions"><p>Terms & Conditions</p></a>
+                    </div>  
+                </div>
+
+                <!-- Contact -->
+                <div class="flex-col-1 container-fluid-sm margin-2">
+                    <h2 class="margin-none">Contact</h2>
+                    <div class="line line-smd line-blue margin-none"></div>
+                    <h3><i class="fa fa-home margin-bottom"></i> <span class="text-bold"> Address:</span> District 10, Ho Chi Minh city</h3>
+                    <h3><i class="fa fa-phone margin-bottom"></i> <span class="text-bold"> Phone:</span> (+84) O934.444.555</h3>
+                    <h3><i class="fa fa-envelope"></i> <span class="text-bold"> Email:</span> contact@minertracker.com</h3>
+                </div>
+                
+                <!-- Email -->
+                <div class="flex-col-2 container-fluid-sm margin-2">
+                    <h2 class="margin-none">Send Us A Message</h2>
+                    <div class="line line-smd line-blue margin-none"></div>
+                    <p>Let's get in touch. Send us a message:</p>
+                    <input class="input bg-transparent text-white border border-light-gray" type="text" placeholder="Name">
+                    <input class="input bg-transparent text-white border border-light-gray" placeholder="Email">
+                    <input class="input bg-transparent text-white border border-light-gray" placeholder="Subject">
+                    <input class="input bg-transparent text-white border border-light-gray" placeholder="Message">
+                    <button class="btn btn-sm btn-rounded bg-blue text-white border-blue hover-light margin-col">
+                        <h3 class="text-bold"><i class="fa fa-send"></i> Send </h3>
+                    </button>
+                </div>
+            </div>
+            <p class="text-center">Copyright 2018 ArounDev Team. All Rights Reserved</p>
+        </footer>
+            <!-- Scroll to top button -->
+            <div class='btn-scroll text-white margin-1 padding-1' id="scrollButton">
+                <h1 class="text-scroll"><i class="fa fa-angle-up"></i></h1>
+            </div>
         <script>
             //On windows scroll event
             window.onscroll = function() {myFunction()};
@@ -192,11 +336,18 @@
             
             function myFunction() {
                 if (window.pageYOffset > sticky) {
+                $("#scrollButton").fadeIn();
                 header.classList.add("navbar-sticky");
                 } else {
+                $("#scrollButton").fadeOut();
                 header.classList.remove("navbar-sticky");
                 }
             }
+            
+            //To top scrolling
+            $("#scrollButton").on('click', function(event) {
+                $('html, body').animate({ scrollTop: $("#header").offset().top}, 800);
+            });
         </script>
                 
     </body>
