@@ -98,6 +98,6 @@
 
 .shadow-hover:hover {
     border-color: transparent;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    box-shadow: 0 8px 10px 0 #00000033, 0 10px 30px 0 #00000030;
 }
 
